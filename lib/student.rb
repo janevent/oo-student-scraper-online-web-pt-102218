@@ -16,12 +16,6 @@ class Student
   def self.create_from_collection(students_array)
     students_array.each do |student_hash|
       student = self.new(student_hash)
-      #student_hash.each {|key, value| self.send(("#{key}="), value)}
-        
-      #binding.pry
-      #student = self.new
-      # student.name = student_hash[:name] 
-      # student.location = student_hash[:location] 
     end
   end
 
